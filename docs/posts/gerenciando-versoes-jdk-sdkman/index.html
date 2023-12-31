@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.92.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://felpesrosa.github.io/">
+    <link rel="canonical" href="https://felpesrosa.github.io/posts/gerenciando-versoes-jdk-sdkman/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://felpesrosa.github.io/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://felpesrosa.github.io/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://felpesrosa.github.io/images/apple-touch-icon-72x72.png">
@@ -31,11 +30,9 @@
     </style>
     <title>
       
-  site do Felipe Rosa
-
+        Gerenciando versões JDK de forma mais simples | site do Felipe Rosa
+      
     </title>
-    
-      <link rel="manifest" href="manifest.json">
     
   </head>
   <body>
@@ -164,7 +161,7 @@
                   <ul id="patterns-list">
                     
                       <li class="pattern">
-                        <a href="https://felpesrosa.github.io/posts/gerenciando-versoes-jdk-sdkman/" >
+                        <a href="https://felpesrosa.github.io/posts/gerenciando-versoes-jdk-sdkman/" aria-current="page">
                           <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
                             <use xlink:href="#bookmark"></use>
                           </svg>
@@ -183,14 +180,22 @@
         <div>
           
   <main id="main">
-    <h1>anotações do Felipe Rosa</h1>
-    <!-- raw HTML omitted -->
-<p>- registrando alguns aprendizados por aqui. Meus links:</p>
-<ul>
-<li><a href="https://linkedin.com/in/felpesrosa" title="">Linkedin</a></li>
-<li><a href="https://github.com/felpesrosa" title="">Github</a></li>
-<li><a href="https://twitter.com/felpesrosa" title="">Twitter</a></li>
-</ul>
+    <h1>Gerenciando versões JDK de forma mais simples</h1>
+    <p>Pra facilitar a troca de versão do JDK (Java Development Kit) diversas vezes na mesma máquina, descobri recentemente uma ferramenta que ajudou nisso: o <a href="https://sdkman.io/" title="Página Inicial do SDKMan">SDKMan</a>. No Linux (e no Windows via WSL2), a instalação é coisa simples:</p>
+<pre class="cmd"><code>curl -s &#34;https://get.sdkman.io&#34; | bash &amp;&amp; source &#34;$HOME/.sdkman/bin/sdkman-init.sh&#34;</code></pre>
+
+<p>Você consegue conferir a instalação com um: <pre class="cmd"><code>sdk version</code></pre>
+</p>
+<p>Para efetivamente instalar as versões JDK desejadas, é possível escolher entre diferentes builds e versões disponíveis na listagem exibida ao executar:
+<pre class="cmd"><code>sdk list java</code></pre>
+</p>
+<p>Com base no Identifier da versão, já é possível instalar a versão desejada com o SDKMan com o comando <code>sdk install java identificador</code>, ex: <pre class="cmd"><code>sdk install java 21.ea.35-open</code></pre>
+</p>
+<p>Caso tenha sido instalada mais de uma versão, é possível definir a versão padrão do sistema operacional com: <pre class="cmd"><code>sdk use java 21.ea.35-open</code></pre>
+</p>
+<p>Além disso, o SDKMan pode ajudar na instalação de outras ferramentas bastante utilizadas, como: Tomcat, Maven, dentre outras listadas em <a href="https://sdkman.io/sdks" title="Página de SDKs disponíveis para instalação">SDK Installation Candidates</a>.</p>
+<p>A instalação pode ser feita com sintaxe semelhante à instalação do JDK, ex: <pre class="cmd"><code>sdk install maven</code></pre>
+</p>
 
   </main>
 
@@ -209,8 +214,6 @@
     </div>
     <script src="https://felpesrosa.github.io/js/prism.js"></script>
     <script src="https://felpesrosa.github.io/js/dom-scripts.js"></script>
-    
-      <script src="https://felpesrosa.github.io/js/service-worker-registration.js"></script>
     
   </body>
 </html>

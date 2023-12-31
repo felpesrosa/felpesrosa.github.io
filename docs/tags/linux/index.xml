@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>anotações do Felipe Rosa on site do Felipe Rosa</title>
-    <link>https://felpesrosa.github.io/</link>
-    <description>Recent content in anotações do Felipe Rosa on site do Felipe Rosa</description>
+    <title>linux on site do Felipe Rosa</title>
+    <link>https://felpesrosa.github.io/tags/linux/</link>
+    <description>Recent content in linux on site do Felipe Rosa</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-BR</language><atom:link href="https://felpesrosa.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cupper</title>
-      <link>https://felpesrosa.github.io/print-version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://felpesrosa.github.io/print-version/</guid>
-      <description>You don&amp;rsquo;t want to edit this file :-)</description>
-    </item>
-    
+    <language>pt-BR</language><atom:link href="https://felpesrosa.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gerenciando versões JDK de forma mais simples</title>
       <link>https://felpesrosa.github.io/posts/gerenciando-versoes-jdk-sdkman/</link>
